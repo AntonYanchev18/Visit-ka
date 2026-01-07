@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Визитка</title>
+    <meta name="description" content="Минималистична визитка страница" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <header class="top">
+
+          <img
+  class="avatar"
+  src="me.jpg"
+  alt="Profile photo"/>
+
+
+          <div class="title">
+            <h1>Anton Yanchev</h1>
+            <p class="role">DevOps / Azure Support Engineer</p>
+          </div>
+        </header>
+
+        <p class="bio">
+          Highly motivated and technically oriented professional with exceptional teamwork capabilities and a strong sense of empathy. Renowned for excellent communication skills and a rapid learning ability, consistently demonstrating the ability to adapt and excel in dynamic environments. Passionate about leveraging technical expertise to solve complex problems and contribute to organizational success.
+
+        </p>
+
+        <div class="cta">
+          <button class="btn ghost" id="emailBtn" type="button">
+    Show email
+  </button>
+
+  <span id="emailText" class="email hidden">
+    a.yanchev18@gmail.com
+  </span>
+          <a class="btn ghost" href="https://github.com/AntonYanchev18" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/anton-yanchev/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn ghost" href="CV-Anton-Yanchev.pdf" download>Download CV</a>
+        </div>
+
+        <div class="line"></div>
+<section class="experience">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <h3>TeKnowledge</h3>
+        <p class="position">Azure Support Engineer L2 | Hybrid</p>
+      </div>
+      <span class="period">July 2024 — Present</span>
+    </div>
+
+    <p class="job-desc">
+     Supporting Microsoft Azure on a Microsoft-connected project, resolving complex cloud issues and ensuring stable,
+  efficient environments. Strong focus on Azure Monitor, KQL, Application Insights, AMA, and Azure Arc, working closely
+  with developers and solution architects.
+    </p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <h3>AMBITIONED</h3>
+        <p class="position">Junior QA Engineer | WFH</p>
+      </div>
+      <span class="period">February 2024 — March 2024</span>
+    </div>
+
+    <p class="job-desc">
+      During my two-month internship on an e-commerce project, I focused on writing test cases and developing automation test suites. Within an agile environment, I actively identified potential issues and vulnerabilities, collaborating closely with the team to address them efficiently. My contributions helped ensure software quality and streamlined processes within the project.
+    </p>
+  </div>
+</section>
+
+        <ul class="meta">
+          <li><span>Location</span><b>Bulgaria</b></li>
+          <li><span>Focus</span><b>Environments / Support</b></li>
+          <li><span>Status</span><b>Open for work</b></li>
+        </ul>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Anton Yanchev </span>
+          <span class="dot">•</span>
+          <a class="small" href="https://github.com/AntonYanchev18" target="_blank" rel="noreferrer">AntonYanchev18</a>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      //email
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+  const emailBtn = document.getElementById("emailBtn");
+  const emailText = document.getElementById("emailText");
+
+  emailBtn.addEventListener("click", () => {
+    emailText.classList.toggle("hidden");
+    emailBtn.textContent = emailText.classList.contains("hidden")
+      ? "Show email"
+      : "Hide email";
+      
+  });
+
+    </script>
+  </body>
+</html>
